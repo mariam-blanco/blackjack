@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+  </head>
+  <body>
+    <main class="container juego">
+      <div class="row banca">
+        <div class="js-cards cards-wrapper"></div>
+        <div class="counter-wrapper">
+          <div class="js-contador contador">0</div>
+          <p>Banca</p>
+        </div>
+      </div>
+      <div class="row jugador">
+        <div class="js-cards cards-wrapper"></div>
+        <div class="counter-wrapper">
+          <div class="js-contador contador">0</div>
+          <p>Jugador</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="btn-wrapper">
+          <button class="js-btn-deal btn">Repartir</button>
+          <button class="js-btn-add btn" disabled>Añadir carta</button>
+          <button class="js-btn-stop btn" disabled>Parar</button>
+        </div>
+      </div>
+      <div class="js-modal modal hidden">
+        <div class="modal-content">
+          <h2></h2>
+          <button class="js-btn-modal btn">Jugar</button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/carta.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
